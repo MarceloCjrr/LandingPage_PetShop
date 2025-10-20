@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- link To JS -->
+    <script src="index.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link For Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>Projeto Animal | Pet Adoption</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Projeto <b class="accent">Animal</b></h1>
+        </a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#pets">Pets</a>
+            <a href="index.html#requisitos">Requisitos</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#historias">Histórias</a>
+        </div>
+
+        <button class="btn-2" onclick="window.location.href='contato.html'">
+            <p>Contato</p>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero page -->
+    <section class="heropage">
+        <div class="hero-headlines">
+            <h1>Encontre seu sue gato hoje!</h1>
+            <p>
+                Descubra o seu companheiro perfeito na nossa seleção de gatos
+                amorosos e carinhosos disponíveis paraadoção.
+            </p>
+        </div>
+
+        <div class="hero-headlines-buttons">
+            <button class="btn-3">Nossos Gatos</button>
+            <button class="btn-3 btn-transparent">Nos contate</button>
+        </div>
+
+        <div class="hero-images">
+            <img src="img/hero-img-1.png" alt="img">
+            <img src="img/hero-img-2.png" alt="img">
+            <img src="img/hero-img-3.png" alt="img">
+        </div>
+    </section>
+    <!-- Hero page End -->
+
+    <!-- Requirements -->
+    <section class="requirements" id="requisitos">
+        <div class="requirements-headlines">
+            <h1>Nosso Processo de Adoção</h1>
+            <p>Nosso processo é simples e cheio de alegria a cada passo do caminho:</p>
+
+            <div class="r-item-container">
+                <!-- r item 1 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #b9ff46;">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                    <h5>Enviando uma inscrição</h5>
+                </div>
+
+                <!-- r item 2 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #fff846;">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h5>Participando de uma entrevista online</h5>
+                </div>
+
+                <!-- r item 3 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #ff8846;">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h5>Conhecendo o animal de estimação pessoalmente</h5>
+                </div>
+
+                <!-- r item 4 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #46c7ff;">
+                        <i class="fa-regular fa-file-zipper"></i>
+                    </div>
+                    <h5>assinando um acordo de adoção</h5>
+                </div>
+
+                <!-- r item 5 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #4fffca;">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h5>Parabéns por encontrar um par</h5>
+                </div>
+            </div>
+        </div>
+        <img class="img-requirements" src="img/requirements-img.png" alt="img">
+    </section>
+    <!-- Requirements End-->
+
+    <!-- Pets -->
+    <section class="pets" id="pets">
+        <div class="pets-headlines">
+            <i class="fa-solid fa-paw"></i>
+            <h1>Conheça seus animais de estimação</h1>
+        </div>
+
+        <div class="pets-collection">
+            <div class="pet-item">
+                <img class="img-pet" src="img/pet-item-1.png" alt="img">
+                <h3>Sr. Woofs</h3>
+            </div>
+
+            <div class="pet-item">
+                <img class="img-pet" src="img/pet-item-2.png" alt="img">
+                <h3>Capitão Shawks</h3>
+            </div>
+
+            <div class="pet-item">
+                <img class="img-pet" src="img/pet-item-3.png" alt="img">
+                <h3>Dr. Miau</h3>
+            </div>
+
+            <div class="pet-item">
+                <img class="img-pet" src="img/pet-item-1.png" alt="img">
+                <h3>Sr. Woofs</h3>
+            </div>
+
+        </div>
+
+        <button class="btn-3 btn-pets">
+            <p>Encontre mais</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+    </section>
+    <!-- Pets End-->
+
+    <!-- Sobre -->
+    <div class="sobre" id="sobre">
+        <div class="sobre-headlines">
+            <h1>Sobre nos</h1>
+            <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="black">
+                Gatos da Lagoa não é
+                <b>um site de adoção de animais de estimação</b>; é um refúgio tanto para animais de
+                estimação em busca de um lar definitivo quanto para pessoas compassivas prontas para recebê-los de
+                braços abertos.
+            </p>
+
+            <div class="sobre-info">
+                <div class="sobre-info-item">
+                    <h5>100+</h5>
+                    <h6>Gatos Salvos</h6>
+                </div>
+                <hr class="sobre-info-divider">
+                <div class="sobre-info-item">
+                    <h5>100%</h5>
+                    <h6>Taxa de Adoção</h6>
+                </div>
+                <hr class="sobre-info-divider">
+                <div class="sobre-info-item">
+                    <h5>5 stars</h5>
+                    <h6>Amor Comunitário</h6>
+                </div>
+            </div>
+            <button class="btn-3">Vamos começar</button>
+        </div>
+        <img class="img-sobre" src="img/about-img.png" alt="img">
+    </div>
+    <!-- Sobre End-->
+</body>
+
+</html>
