@@ -25,33 +25,6 @@ section {
     background-size: cover;
 }
 
-/* For Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
-}
-
-:root {
-    --accent: #ff9a24;
-    --black: #131313;
-}
-
-body {
-    min-height: 100vh;
-}
-
-section {
-    min-width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 /* - Navbar - */
 nav {
     z-index: 999;
@@ -214,7 +187,7 @@ nav.sticky {
     color: white;
 }
 
-.hero-images {
+.hero-imagens {
     display: flex;
     margin-top: 56px;
     gap: 1.5rem;
@@ -398,4 +371,185 @@ nav.sticky {
 .img-sobre{
     width: 280px;
     height: auto;
+}
+
+
+/* testimonials section */
+.testimunhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.testimunhas h6 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.testimunhas h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.testimunhas-container {
+    display: flex;
+    margin-top: 34px;
+    gap: 24px;
+}
+
+.testimunhas-item {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 222px;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+.testimunhas-pessoa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimunhas-pessoa i {
+    font-size: 50px;
+    color: #ff9a24;
+}
+
+.testimunhas-nome {
+    display: flex;
+    gap: 14px;
+}
+
+.testimunhas-nome h4 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.testimunhas-nome p {
+    opacity: 0.8;
+}
+
+.testimunhas-text {
+    font-weight: 600;
+    margin-top: 28px;
+}
+
+/* footer */
+footer {
+    background-color: var(--black);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    padding: 32px 50px;
+}
+
+.footer-links h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.links-container {
+    display: flex;
+    gap: 60px;
+    font-size: 12px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.links a:hover {
+    color: var(--accent);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    padding: 32px 120px;
+}
+
+.footer-brand h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.footer-brand p {
+    font-size: 1.3rem;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+    margin-top: 14px;
+}
+
+.social a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: var(--black);
+    transition: all 0.3s ease-out;
+}
+
+.social a:hover {
+    background-color: var(--accent);
+}
+
+.footer-contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 32px 50px;
+}
+
+.contato-info-item {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.contato-info-item i {
+    font-size: 24px;
+}
+
+.contato-info-item p {
+    font-size: 24px;
+}
+
+.copyright {
+    margin-top: 20px;
 }
