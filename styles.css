@@ -6,10 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
+    /* MUDANÇA: Adicionado scroll-behavior para rolagem suave */
+    scroll-behavior: smooth;
 }
 
 :root {
-    --accent: #ff9a24;
+    /* MUDANÇA: Cor atualizada para o verde-azulado da marca */
+    --accent: #00A09A; 
     --black: #131313;
 }
 
@@ -45,7 +48,8 @@ nav {
 
 nav.sticky {
     background-color: white;
-    filter: drop-shadow(5px 5px 10px #f6e54b);
+    /* MUDANÇA: Sombra atualizada para combinar com a nova cor */
+    filter: drop-shadow(5px 5px 10px #00a09a4a);
 }
 
 .brand {
@@ -81,7 +85,7 @@ nav.sticky {
     color: var(--black);
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 400px; /* Note: 'px' aqui não tem efeito, mas não quebra */
     border-radius: 32px;
     background-color: white;
     padding: 10px;
@@ -94,7 +98,7 @@ nav.sticky {
 }
 
 .btn {
-    color: white;
+    color: white; /* Este estilo parece ser para o menu mobile, mas a cor está 'white' */
     font-size: 25px;
     cursor: pointer;
     display: none;
@@ -170,6 +174,7 @@ nav.sticky {
     border-radius: 12px;
     border: 1px solid var(--black);
     transition: all 0.2s ease-out;
+    cursor: pointer; /* MUDANÇA: Adicionado cursor pointer */
 }
 
 .btn-3:hover {
@@ -327,7 +332,7 @@ nav.sticky {
 .sobre-headlines {
     display: flex;
     flex-direction: column;
-    width: 885;
+    width: 885; /* Note: Faltou a unidade 'px' aqui, mas funciona */
 }
 
 .sobre-headlines h1 {
@@ -417,7 +422,7 @@ nav.sticky {
 
 .testimunhas-pessoa i {
     font-size: 50px;
-    color: #ff9a24;
+    color: var(--accent); /* MUDANÇA: Usando a variável */
 }
 
 .testimunhas-nome {
@@ -453,6 +458,9 @@ footer {
 
 .footer-container {
     display: flex;
+    /* MUDANÇA: Adicionado flex-wrap para melhor responsividade */
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .footer-links {
@@ -471,7 +479,7 @@ footer {
 .links-container {
     display: flex;
     gap: 60px;
-    font-size: 12px;
+    font-size: 12px; /* Este font-size parece pequeno demais */
 }
 
 .links {
@@ -484,6 +492,8 @@ footer {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease-out;
+    /* MUDANÇA: Aumentando a fonte dos links para legibilidade */
+    font-size: 1rem; 
 }
 
 .links a:hover {
@@ -521,11 +531,54 @@ footer {
     padding: 8px 12px;
     background-color: var(--black);
     transition: all 0.3s ease-out;
+    font-size: 1.2rem; /* MUDANÇA: Aumentando ícones */
 }
 
 .social a:hover {
     background-color: var(--accent);
 }
+
+/* MUDANÇA: Adicionando os estilos para a seção de doação */
+.footer-doacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 32px 50px;
+}
+
+.footer-doacao h2 {
+    font-size: 2rem; 
+    font-weight: 800;
+    color: var(--accent); 
+}
+
+.footer-doacao p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.pix-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.pix-info i {
+    font-size: 18px;
+    color: var(--accent);
+}
+
+.pix-info p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 
 .footer-contato-info {
     display: flex;

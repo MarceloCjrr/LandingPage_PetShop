@@ -5,7 +5,11 @@ window.addEventListener("scroll", () =>
     navbar.classList.toggle("sticky", window.scrollY > 0)
 );
 
-const menu = document.querySelector("menu");
+/* * CORREÇÃO DE BUG 1:
+ * Você estava tentando selecionar a tag <menu>, que não existe no seu HTML.
+ * O correto é selecionar a DIV com a *classe* ".menu".
+*/
+const menu = document.querySelector(".menu"); // <-- MUDANÇA AQUI
 const toggleMenu = () => menu.classList.toggle("active");
 
 document.querySelector(".menu-btn").addEventListener("click", toggleMenu);
@@ -15,6 +19,7 @@ document
     .querySelectorAll(".menu a")
     .forEach((link) => link.addEventListener("click", toggleMenu));
 
+// Lenis Smooth Scrolling
 const lenis = new Lenis();
 function raf(time) {
     lenis.raf(time);
@@ -28,6 +33,7 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 
 
+// Scroll Reveal
 const sr = ScrollReveal({
     origin: "bottom",
     distance: "40px",
@@ -61,10 +67,13 @@ sr.reveal(".testimunhas h6");
 sr.reveal(".testimunhas-item", { delay: 1000 });
 sr.reveal(".footer-brand");
 sr.reveal(".footer-links", { delay: 500, origin: "left" });
+// MUDANÇA: Adicionando a animação para a nova seção de doação
+sr.reveal(".footer-doacao", { delay: 500, origin: "bottom" });
 sr.reveal(".footer-contato-info", { delay: 500, origin: "right" });
 sr.reveal(".copyright", { delay: 600 });
 
 
+// GSAP Hero Animation
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
     trigger: ".heropage",
@@ -82,15 +91,20 @@ ScrollTrigger.create({
             });
         }
     },
-}); 
+});
 
 
+// GSAP Text Reveal
 const splitTypes = document.querySelectorAll(".reveal-type");
 splitTypes.forEach((char, i) => {
     const bg = char.dataset.bgColor;
     const fg = char.dataset.fgColor;
 
-    const text = new SplitTypes(char, { type: "chars" });
+    /* * CORREÇÃO DE BUG 2:
+     * O nome da biblioteca que você importou é "SplitType" (no singular).
+     * Usar "SplitTypes" (com 's') causaria um erro.
+    */
+    const text = new SplitType(char, { type: "chars" }); // <-- MUDANÇA AQUI
 
     gsap.fromTo(
         text.chars,
@@ -112,6 +126,3 @@ splitTypes.forEach((char, i) => {
         }
     );
 });
-
-
-
