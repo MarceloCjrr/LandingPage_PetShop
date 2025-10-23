@@ -112,6 +112,7 @@ splitTypes.forEach((char, i) => {
             color: bg,
         },
         {
+            
             color: fg,
             duration: 0.3,
             stagger: 0.02,
