@@ -5,11 +5,13 @@ window.addEventListener("scroll", () =>
     navbar.classList.toggle("sticky", window.scrollY > 0)
 );
 
-const menu = document.querySelector("menu");
-const toggleMenu = () => menu.classList.toggle("active");
+const menu = document.querySelector(".menu");
+const toggleMenu = () => { if (menu) menu.classList.toggle("active"); };
 
-document.querySelector(".menu-btn").addEventListener("click", toggleMenu);
-document.querySelector(".close-btn").addEventListener("click", toggleMenu);
+const menuBtn = document.querySelector(".menu-btn");
+if (menuBtn) menuBtn.addEventListener("click", toggleMenu);
+const closeBtn = document.querySelector(".close-btn");
+if (closeBtn) closeBtn.addEventListener("click", toggleMenu);
 
 document
     .querySelectorAll(".menu a")
@@ -90,7 +92,7 @@ splitTypes.forEach((char, i) => {
     const bg = char.dataset.bgColor;
     const fg = char.dataset.fgColor;
 
-    const text = new SplitTypes(char, { type: "chars" });
+    const text = new SplitType(char, { type: "chars" });
 
     gsap.fromTo(
         text.chars,
