@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
-    <!-- Use for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link To CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- link To JS -->
     <script src="index.js" defer></script>
-    <!-- For Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- For Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link For Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Link For Gsap - Scroll Trigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Link For Lenis - Smooth Scrolling -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <!-- Link For Split Type -->
     <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
 
-    <title>Projeto Animal | Pet Adoption</title>
+    <title>Projeto Animal Campinas | Adoção de Cães e Gatos</title>
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav>
         <a href="index.html" class="brand">
-            <h1>Projeto <b class="accent">Animal</b></h1>
+            <h1>Projeto <b class="accent">Animal Campinas</b></h1>
         </a>
 
         <div class="menu">
@@ -46,12 +36,12 @@
             <a href="index.html#pets">Pets</a>
             <a href="index.html#requisitos">Requisitos</a>
             <a href="index.html#sobre">Sobre</a>
-            <a href="index.html#historias">Histórias</a>
+            <a href="index.html#historias">Finais Felizes</a>
         </div>
 
-        <button class="btn-2" onclick="window.location.href='contato.html'">
-            <p>Contato</p>
-            <i class="fa-solid fa-circle-arrow-right"></i>
+        <button class="btn-2" onclick="location.href='#footer-doacao'">
+            <p>Doe Agora</p>
+            <i class="fa-solid fa-hand-holding-heart"></i>
         </button>
 
         <div class="btn">
@@ -59,21 +49,25 @@
         </div>
 
     </nav>
+<<<<<<< HEAD
     <!-- Navbar End -->
 
     <!-- Hero page -->
     <section class="heropage" id="home">
+=======
+    <section class="heropage">
+>>>>>>> f61b036f8a147a9f14796a5aa443b8b2aa87638b
         <div class="hero-headlines">
-            <h1>Encontre seu sue Pet hoje!</h1>
+            <h1>Encontre seu Pet hoje!</h1>
             <p>
-                Descubra o seu companheiro perfeito na nossa seleção de gatos
-                amorosos e carinhosos disponíveis paraadoção.
+                Descubra o seu companheiro perfeito na nossa seleção de cães e gatos
+                amorosos e carinhosos disponíveis para adoção.
             </p>
         </div>
 
         <div class="hero-headlines-buttons">
-            <button class="btn-3">Nossos Pets</button>
-            <button class="btn-3 btn-transparent">Nos contate</button>
+            <button class="btn-3" onclick="location.href='#pets'">Nossos Pets</button>
+            <button class="btn-3 btn-transparent" onclick="location.href='#footer-doacao'">Doe Agora</button>
         </div>
 
         <div class="hero-imagens">
@@ -82,16 +76,12 @@
             <img src="img/hero-img-3.png" alt="img">
         </div>
     </section>
-    <!-- Hero page End -->
-
-    <!-- Requirements -->
     <section class="requirements" id="requisitos">
         <div class="requirements-headlines">
             <h1>Nosso Processo de Adoção</h1>
-            <p>Nosso processo é simples e cheio de alegria a cada passo do caminho:</p>
+            <p>Nosso processo é simples e focado no bem-estar do animal:</p>
 
             <div class="r-item-container">
-                <!-- r item 1 -->
                 <div class="r-item">
                     <div class="r-logo" style="background-color: #b9ff46;">
                         <i class="fa-regular fa-newspaper"></i>
@@ -99,7 +89,6 @@
                     <h5>Enviando uma inscrição</h5>
                 </div>
 
-                <!-- r item 2 -->
                 <div class="r-item">
                     <div class="r-logo" style="background-color: #fff846;">
                         <i class="fa-solid fa-phone"></i>
@@ -107,46 +96,40 @@
                     <h5>Participando de uma entrevista online</h5>
                 </div>
 
-                <!-- r item 3 -->
                 <div class="r-item">
                     <div class="r-logo" style="background-color: #ff8846;">
                         <i class="fa-solid fa-paw"></i>
                     </div>
-                    <h5>Conhecendo o animal de estimação pessoalmente</h5>
+                    <h5>Conhecendo o animal pessoalmente</h5>
                 </div>
 
-                <!-- r item 4 -->
                 <div class="r-item">
                     <div class="r-logo" style="background-color: #46c7ff;">
                         <i class="fa-regular fa-file-zipper"></i>
                     </div>
-                    <h5>assinando um acordo de adoção</h5>
+                    <h5>Assinando o termo de adoção</h5>
                 </div>
 
-                <!-- r item 5 -->
                 <div class="r-item">
                     <div class="r-logo" style="background-color: #4fffca;">
                         <i class="fa-solid fa-handshake"></i>
                     </div>
-                    <h5>Parabéns por encontrar um par</h5>
+                    <h5>Parabéns pelo seu novo amigo!</h5>
                 </div>
             </div>
         </div>
         <img class="img-requirements" src="img/requirements-img.png" alt="img">
     </section>
-    <!-- Requirements End-->
-
-    <!-- Pets -->
     <section class="pets" id="pets">
         <div class="pets-headlines">
             <i class="fa-solid fa-paw"></i>
-            <h1>Conheça seus animais de estimação</h1>
+            <h1>Conheça nossos resgatados</h1>
         </div>
 
         <div class="pets-collection">
             <div class="pet-item">
                 <img class="img-pet" src="img/pet-item-1.png" alt="img">
-                <h3>Sr. Woofs</h3>
+                <h3>Bolinha</h3>
             </div>
 
             <div class="pet-item">
@@ -159,30 +142,34 @@
                 <h3>Dr. Miau</h3>
             </div>
 
+<<<<<<< HEAD
+=======
+            <div class="pet-item">
+                <img class="img-pet" src="img/pet-item-1.png" alt="img">
+                <h3>Max</h3>
+            </div>
+
+>>>>>>> f61b036f8a147a9f14796a5aa443b8b2aa87638b
         </div>
 
         <button class="btn-3 btn-pets">
-            <p>Encontre mais</p>
+            <p>Ver mais animais</p>
             <i class="fa-solid fa-arrow-right-long"></i>
         </button>
     </section>
-    <!-- Pets End-->
-
-    <!-- Sobre -->
     <div class="sobre" id="sobre">
         <div class="sobre-headlines">
-            <h1>Sobre nos</h1>
+            <h1>Sobre nós</h1>
             <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="black">
-                Projeto Animal não é
-                <b>um site de adoção de animais de estimação</b>; é um refúgio tanto para animais de
-                estimação em busca de um lar definitivo quanto para pessoas compassivas prontas para recebê-los de
+                O <b>Projeto Animal Campinas</b> não é apenas um site de adoção; é um refúgio para animais
+                em busca de um lar definitivo e para pessoas compassivas prontas para recebê-los de
                 braços abertos.
             </p>
 
             <div class="sobre-info">
                 <div class="sobre-info-item">
                     <h5>100+</h5>
-                    <h6>Gatos Salvos</h6>
+                    <h6>Animais Salvos</h6>
                 </div>
                 <hr class="sobre-info-divider">
                 <div class="sobre-info-item">
@@ -198,73 +185,64 @@
             <button class="btn-3">Vamos começar</button>
         </div>
     </div>
-    <!-- Sobre End-->
-
-    <!-- Testimonials -->
     <div class="testimunhas" id="historias">
-        <h6>Nossas avaliações</h6>
-        <h1>Oque as pessoas falam</h1>
+        <h6>Nossas Adoções</h6>
+        <h1>Finais Felizes</h1>
 
         <div class="testimunhas-container">
-            <!-- Testimunha 1 -->
             <div class="testimunhas-item">
                 <div class="testimunhas-pessoa">
                     <div class="testimunhas-nome">
                         <img src="img/testimony-image-1.png" alt="img">
                         <div class="testimunhas-nome-item">
                             <h4>Julia Maria</h4>
-                            <p>Sir Garfield's é tão fofo</p>
+                            <p>Adotou o Garfield</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-quote-right"></i>
                 </div>
                 <p class="testimunhas-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, vitae doloribus hic enim
-                    necessitatibus labore ipsam totam optio consequuntur beatae accusamus quisquam ea
+                    "O processo de adoção foi super tranquilo e transparente. Hoje o Garfield é a alegria da casa!
+                    Obrigada, Projeto Animal Campinas!"
                 </p>
             </div>
 
 
-            <!-- Testimunha 2 -->
             <div class="testimunhas-item">
                 <div class="testimunhas-pessoa">
                     <div class="testimunhas-nome">
                         <img src="img/testimony-image-2.png" alt="img">
                         <div class="testimunhas-nome-item">
                             <h4>Mario José</h4>
-                            <p>Sir Garfield's é tão fofo</p>
+                            <p>Adotou o Max</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-quote-right"></i>
                 </div>
                 <p class="testimunhas-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, vitae doloribus hic enim
-                    necessitatibus labore ipsam totam optio consequuntur beatae accusamus quisquam ea
+                    "Encontramos nosso melhor amigo aqui. A equipe foi muito atenciosa e deu todo o suporte
+                    necessário. Recomendamos de olhos fechados."
                 </p>
             </div>
-            <!-- Testimunha 3 -->
             <div class="testimunhas-item">
                 <div class="testimunhas-pessoa">
                     <div class="testimunhas-nome">
                         <img src="img/testimony-image-3.png" alt="img">
                         <div class="testimunhas-nome-item">
-                            <h4>Julia Maria</h4>
-                            <p>Sir Garfield's é tão fofo</p>
+                            <h4>Ana Clara</h4>
+                            <p>Adotou a Luna</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-quote-right"></i>
                 </div>
                 <p class="testimunhas-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, vitae doloribus hic enim
-                    necessitatibus labore ipsam totam optio consequuntur beatae accusamus quisquam ea
+                    "Desde a entrevista até a adoção, tudo foi feito com muito amor e seriedade. A Luna mudou
+                    nossas vidas para melhor!"
                 </p>
             </div>
         </div>
     </div>
-    <!-- Testimonials End -->
-
-    <!-- Footer End -->
-     <footer id="footer">
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <h2>Outros links</h2>
@@ -277,37 +255,51 @@
 
                     <div class="links">
                         <a href="index.html#requisitos">Requisitos</a>
-                        <a href="index.html#historias">Histórias</a>
-                        <a href="index.html#footer">Contact Us</a>
+                        <a href="index.html#historias">Finais Felizes</a>
+                        <a href="index.html#footer">Contato</a>
                     </div>
                 </div>
             </div>
             <div class="footer-brand">
+<<<<<<< HEAD
                 <h1>Projeto <b class="accent">Animas</b></h1>
                 <p>Encontre seu parceiro hoje mesmo!</p>
+=======
+                <h1>Projeto <b class="accent">Animal Campinas</b></h1>
+                <p>Encontre seu parceiro perfeito hoje mesmo!</p>
+>>>>>>> f61b036f8a147a9f14796a5aa443b8b2aa87638b
                 <div class="social">
-                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/projetoanimalcampinas/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                     <a href="/"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="/"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
-            <div class="footer-contato-info">
-                <div class="conatato-info-item">
-                    <i class="fa-solid   fa-envelope"></i>
-                    <p>projetoanimalcps@gmail.com</p>
+
+            <div class="footer-doacao" id="footer-doacao">
+                <h2>Ajude a Causa</h2>
+                <p>Sua doação salva vidas. Contribua via PIX!</p>
+                <div class="pix-info">
+                    <i class="fa-solid fa-key"></i>
+                    <p>CNPJ: 28.283.471/0001-23</p>
                 </div>
-                <div class="conatato-info-item">
+                <p>Projeto Animal Campinas</p>
+            </div>
+
+            <div class="footer-contato-info">
+                <div class="contato-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>projetoanimalcampinas@gmail.com</p>
+                </div>
+                <div class="contato-info-item">
                     <i class="fa-solid fa-phone"></i>
                     <p>+19-99999-8888</p>
                 </div>
             </div>
         </div>
-        <p class="copyright">All Rights Reserved to <b>Projeto Animal</b></p>
-     </footer>
-    <!-- Footer End -->
-
-
+        <p class="copyright">All Rights Reserved to <b>Projeto Animal Campinas</b></p>
+    </footer>
 </body>
 
 </html>
