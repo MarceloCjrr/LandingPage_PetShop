@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets | Projeto Animal</title>
+
+    <link rel="stylesheet" href="pets.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Projeto <b class="accent">Animal</b></h1>
+        </a>
+
+        <a href="index.html" class="brand-logo-link">
+            <img src="img/logo.jpg" alt="Logo Projeto Animal" class="brand-logo">
+        </a>
+    </nav>
+
+    <section class="heropage" id="home">
+        <div class="hero-headlines">
+        <h1>Nossos Pets à Espera de um Lar</h1>
+        </div>
+
+        <div class="filters-container">
+            <div class="filter-group">
+                <label>Gênero:</label>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Macho">Macho</button>
+                <button class="filter-btn" data-filter="Fêmea">Fêmea</button>
+            </div>
+
+            <div class="filter-group">
+                <label>Porte:</label>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Pequeno">Pequeno</button>
+                <button class="filter-btn" data-filter="Médio">Médio</button>
+                <button class="filter-btn" data-filter="Grande">Grande</button>
+            </div>
+        </div>
+        <section class="pets-container" id="pets-list"></section>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h2>Outros links</h2>
+                <div class="links-container">
+                    <div class="links">
+                        <a href="/">Home</a>
+                        <a href="index.html#sobre">Sobre</a>
+                        <a href="index.html#pets">Pets</a>
+                    </div>
+
+                    <div class="links">
+                        <a href="index.html#requisitos">Requisitos</a>
+                        <a href="index.html#historias">Histórias</a>
+                        <a href="https://apoia.se/projetoanimal">Doe agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-brand">
+                <h1>Projeto <b class="accent">Animal Campinas</b></h1>
+                <p>Encontre seu parceiro hoje mesmo!</p>
+                <div class="social">
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-contato-info">
+                <div class="conatato-info-item">
+                    <i class="fa-solid   fa-envelope"></i>
+                    <p>projetoanimalcps@gmail.com</p>
+                </div>
+                <div class="conatato-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+19-99999-8888</p>
+                </div>
+            </div>
+
+        </div>
+     </footer>
+    <script src="pets_data.js"></script>
+    <script src="pets.js"></script>
+</body>
+
+</html>

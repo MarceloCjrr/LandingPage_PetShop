@@ -1,0 +1,540 @@
+/* For Fonts - Mantendo a mesma fonte Nunito Sans */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+    /* Cores do projeto original */
+    --accent: #357D95;
+    --black: #131313;
+
+    /* Cores da nova estrutura "Pet-estrutura.jpg" */
+    --color-cream: #F8F5EE;
+    /* Cor de fundo */
+    --color-white: #FFFFFF;
+    /* Cor do cartão principal */
+    --color-light-blue: #B3E0E8;
+    /* Cor da caixa "família" */
+    --color-ribbon: #A1978E;
+    /* Cor da fita superior */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--color-cream);
+    min-height: 100vh;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+nav {
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--color-cream);
+    padding: 20px 50px;
+    transition: all 0.4s ease-out; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+nav.sticky {
+    background-color: var(--color-cream);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+.brand {
+    text-decoration: none;
+    transition: all ease-in-out 0.3;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.brand-logo-link {
+    text-decoration: none;
+    transition: all ease-in-out 0.3;
+    /* Garante que o link da logo seja alinhado verticalmente */
+    display: flex; 
+    align-items: center; 
+}
+.brand-logo {
+    height: 35px; 
+    width: auto;
+    position: relative;
+    border-radius: 50px;
+}
+.brand h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.brand:hover {
+    opacity: 0.8;
+}
+
+.heropage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-headlines {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--black);
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* --- ESTILOS DA PÁGINA DE PETS --- */
+
+.pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem a linha */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 20px 100px 20px;
+    gap: 60px;
+    /* Espaço entre os cards */
+}
+
+/* Card Individual (Imita a estrutura de Pedro) */
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-cream);
+    padding: 30px 0;
+}
+
+.pet-content {
+    display: flex;
+    background-color: var(--color-cream);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.pet-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-cream);
+    border-radius: 20px 0 0 20px;
+}
+
+.pet-images img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Imita o efeito de fundo pontilhado/sombra sutil */
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.pet-info {
+    position: relative;
+    background-color: var(--color-white);
+    padding: 50px 40px 40px 40px;
+    border-radius: 0 20px 20px 0;
+    width: 450px;
+}
+
+/* Fita Superior (Ribbon) */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 60px;
+    height: 80px;
+    background-color: var(--color-ribbon);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon i {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.pet-info h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.pet-info h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--black);
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.pet-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.pet-info li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+}
+
+.pet-info li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    color: var(--accent);
+    /* Usando o accent azul do seu tema */
+    line-height: 1.4;
+}
+
+/* Caixa "Merece uma Família" */
+.call-to-action {
+    background-color: var(--color-light-blue);
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* --- ESTILOS DOS FILTROS --- */
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-group label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    background-color: var(--color-white);
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-out;
+}
+
+.filter-btn:hover {
+    background-color: #E3F2F4;
+    /* Um azul mais claro no hover */
+}
+
+.filter-btn.active {
+    background-color: var(--accent);
+    color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+/* footer */
+footer {
+    background-color: var(--black);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    padding: 32px 50px;
+}
+
+.footer-links h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.links-container {
+    display: flex;
+    gap: 60px;
+    font-size: 12px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.links a:hover {
+    color: var(--accent);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    padding: 32px 120px;
+}
+
+.footer-brand h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-brand p {
+    font-size: 1.3rem;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+    margin-top: 14px;
+}
+
+.social a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: var(--black);
+    transition: all 0.3s ease-out;
+}
+
+.social a:hover {
+    background-color: var(--accent);
+}
+
+.footer-contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 32px 50px;
+}
+
+.contato-info-item {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.contato-info-item i {
+    font-size: 24px;
+}
+
+.contato-info-item p {
+    font-size: 24px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 1024px) and (min-width: 0px) {
+    .pet-images img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pet-info {
+        width: 350px;
+        padding: 40px 30px 30px 30px;
+    }
+
+    .pet-info h2 {
+        font-size: 3rem;
+    }
+
+    .pet-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .call-to-action {
+        font-size: 1.3rem;
+    }
+
+    .ribbon {
+        right: 30px;
+    }
+
+    footer {
+        padding: 20px 50px;
+    }
+
+    .footer-brand {
+        padding: 20px 30px;
+    }
+
+    .footer-brand h1 {
+        font-size: 28px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-links,
+    .footer-contato-info {
+        padding: 15px;
+    }
+
+    .footer-links h2 {
+        font-size: 28px;
+    }
+
+    .footer-contato-info p {
+        font-size: 16px;
+    }
+
+    .footer-contato-info i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+    .pets-container {
+        padding-top: 50px;
+        gap: 40px;
+    }
+
+    .pet-content {
+        flex-direction: column;
+        /* Quebra em coluna no mobile */
+        max-width: 400px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .pet-images {
+        flex-direction: row;
+        /* Imagens em linha no mobile */
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .pet-images img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pet-info {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .ribbon {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .pet-info h2 {
+        font-size: 3.5rem;
+    }
+
+    .pet-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .filters-container {
+        padding: 10px 20px 30px 20px;
+    }
+
+    .filter-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-group label {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-brand {
+        order: 1;
+        border: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .footer-links {
+        order: 2;
+        text-align: center;
+    }
+
+    .links-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-contato-info {
+        order: 3;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
