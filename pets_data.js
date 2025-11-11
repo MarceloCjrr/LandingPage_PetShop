@@ -35,7 +35,7 @@ const PETS_DATA = [
             "adocao/Monique-2.png",
             "adocao/Monique-3.png",
         ],
-        em_destaque: true
+        em_destaque: false
     },
     {
         id: "Oreo",
@@ -55,7 +55,7 @@ const PETS_DATA = [
             "adocao/Oreo-2.png",
             "adocao/Oreo-3.png",
         ],
-        em_destaque: true
+        em_destaque: false
     },
     {
         id: "Thanus",
@@ -76,6 +76,6 @@ const PETS_DATA = [
             "adocao/Thanus-2.png",
             "adocao/Thanus-3.png",
         ],
-        em_destaque: true
+        em_destaque: false
     },
 ];
