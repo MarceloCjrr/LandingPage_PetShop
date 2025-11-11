@@ -16,7 +16,7 @@ const PETS_DATA = [
             "adocao/Marrom-2.png",
             "adocao/Marrom-3.png",
         ],
-        em_destaque: true // Para usar a fita (ribbon) de destaque
+        em_destaque: false 
     },
     {
         id: "Monique",
